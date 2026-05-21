@@ -38,7 +38,7 @@ export class <%= resourceClassName %>SearchComponent implements OnInit {
   private readonly formBuilder = inject(FormBuilder);
   readonly locale = inject(LOCALE_ID);
 
-  calendars = viewChildren(DatePicker)
+  @ViewChildren(DatePicker) calendars!: QueryList<DatePicker>
   viewModel = toSignal<<%= resourceClassName %>SearchViewModel>(
     this.store.select(select<%= resourceClassName %>SearchViewModel),
     { initialValue: null }
@@ -124,7 +124,7 @@ export class <%= resourceClassName %>SearchComponent implements OnInit {
   search(formValue: FormGroup) {
     const searchCriteria = buildSearchCriteria(
       formValue.getRawValue(),
-      Array.from(this.calendars()),
+      this.calendars,
       { removeNullValues: true }
     );
     this.store.dispatch(
