@@ -102,8 +102,8 @@ export async function angularGenerator(
   addScriptsToPackageJson(tree, options);
   addExtensionsToPackageJson(tree);
 
-  const oneCXLibVersion = '^8.0.0';
-  const angularVersion = '21.2.9';
+  const oneCXLibVersion = '^8.2.2';
+  const angularVersion = '^21.2.9';
 
   addDependenciesToPackageJson(
     tree,
@@ -123,13 +123,13 @@ export async function angularGenerator(
       '@ngx-translate/http-loader': '^17.0.0',
       "@module-federation/enhanced": "^2.4.0",
       'ngrx-store-localstorage': '^20.1.0',
-      '@ngrx/component': '21.1.0',
-      '@ngrx/effects': '21.1.0',
-      '@ngrx/router-store': '21.1.0',
-      '@ngrx/store': '21.1.0',
-      '@ngrx/store-devtools': '21.1.0',
+      '@ngrx/component': '^21.1.0',
+      '@ngrx/effects': '^21.1.0',
+      '@ngrx/router-store': '^21.1.0',
+      '@ngrx/store': '^21.1.0',
+      '@ngrx/store-devtools': '^21.1.0',
       '@webcomponents/webcomponentsjs': '^2.8.0',
-      'zone.js': '0.16.1',
+      'zone.js': '~0.16.1',
       '@angular/animations': angularVersion,
       '@angular/cdk': angularVersion,
       '@angular/common': angularVersion,
@@ -140,9 +140,9 @@ export async function angularGenerator(
       '@angular/platform-browser': angularVersion,
       '@angular/platform-browser-dynamic': angularVersion,
       '@angular/router': angularVersion,
-      primeflex: '^4.0.0',
-      primeicons: '^7.0.0',
-      primeng: '^21.0.0',
+      'primeflex': '^3.3.1',
+      'primeicons': '^7.0.0',
+      'primeng': '^21.0.0',
       '@primeng/themes': '^21.0.0',
     },
     {
@@ -167,12 +167,12 @@ export async function angularGenerator(
       '@angular/cli': angularVersion,
       '@angular/compiler-cli': angularVersion,
       '@angular/language-service': angularVersion,
-      'angular-eslint': '21.3.1',
-      '@angular-eslint/builder': '21.3.1',
-      '@angular-eslint/eslint-plugin': '21.3.1',
-      '@angular-eslint/eslint-plugin-template': '21.3.1',
-      '@angular-eslint/schematics': '21.3.1',
-      '@angular-eslint/template-parser': '21.3.1',
+      'angular-eslint': '^21.3.1',
+      '@angular-eslint/builder': '^21.3.1',
+      '@angular-eslint/eslint-plugin': '^21.3.1',
+      '@angular-eslint/eslint-plugin-template': '^21.3.1',
+      '@angular-eslint/schematics': '^21.3.1',
+      '@angular-eslint/template-parser': '^21.3.1',
       '@eslint/js': '^9.8.0',
       '@nx/eslint': '22.7.1',
       '@nx/eslint-plugin': '22.7.1',
@@ -182,7 +182,7 @@ export async function angularGenerator(
       'eslint-plugin-prettier': '^5.2.1',
       jest: '^30.0.0',
       'jest-environment-jsdom': '^30.0.0',
-      'jest-preset-angular': '16.1.4',
+      'jest-preset-angular': '^16.1.4',
       'jest-sonar': '^0.2.16',
       'jest-sonar-reporter': '^2.0.0',
       nx: '22.7.1',
