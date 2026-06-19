@@ -102,7 +102,7 @@ export async function angularGenerator(
   addScriptsToPackageJson(tree, options);
   addExtensionsToPackageJson(tree);
 
-  const oneCXLibVersion = '^8.4.1';
+  const oneCXLibVersion = '^8.7.0';
   const angularVersion = '^21.2.9';
 
   addDependenciesToPackageJson(
@@ -146,6 +146,7 @@ export async function angularGenerator(
       '@primeng/themes': '^21.0.0',
     },
     {
+      "@onecx/build-utils": oneCXLibVersion,
       '@nx/angular': '22.7.1',
       '@nx/devkit': '22.7.1',
       '@nx/jest': '22.7.1',

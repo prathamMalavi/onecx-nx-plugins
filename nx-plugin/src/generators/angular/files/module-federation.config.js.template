@@ -1,4 +1,4 @@
-const { getOneCXSharedRecommendations, getOneCXSharedLibraryConfig } = require('@onecx/accelerator')
+const { getOneCXSharedRecommendations, getOneCXSharedLibraryConfig } = require('@onecx/build-utils');
 const pkg = require('./package.json')
 const { dependencies } = pkg
 
